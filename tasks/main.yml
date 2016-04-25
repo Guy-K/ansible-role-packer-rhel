@@ -23,7 +23,7 @@
   lineinfile:
     dest: /etc/sysconfig/network
     regexp: '^RES_OPTIONS'
-    line: 'RES_OPTIONS="single-request-reopen"'
+    line: 'RES_OPTIONS=single-request-reopen'
     state: present
 
 - name: Restart network service (explicitly).
